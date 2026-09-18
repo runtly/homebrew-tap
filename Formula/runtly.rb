@@ -6,14 +6,12 @@ class Runtly < Formula
   desc "JavaScript runtime manager for macOS that tracks EOL and CVE exposure"
   homepage "https://runtly.flatium.com"
   version "0.1.0"
-  # Proprietary: this formula belongs in runtly's own tap, never in
-  # homebrew-core, which accepts only open source software.
-  license :cannot_represent
+  license "Apache-2.0"
 
   on_macos do
     url "https://dl.runtly.flatium.com/download/runtly-#{version}-macos-universal.tar.gz"
     # Replaced by the release pipeline.
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "3f0e04ad7959759f9d3d21e1e2f90dbd1260917c6f40f0baf85654c88288bb4a"
   end
 
   livecheck do

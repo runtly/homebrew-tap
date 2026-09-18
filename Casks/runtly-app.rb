@@ -1,7 +1,7 @@
 # Homebrew cask for the runtly desktop app.
 cask "runtly-app" do
   version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "97a7b77cfdcbca0880bec2d14abf6fc91ee6886210a131636259fcb42ab97bde"
 
   url "https://dl.runtly.flatium.com/download/runtly-#{version}-universal.dmg"
   name "runtly"
