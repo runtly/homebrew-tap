@@ -8,7 +8,10 @@ cask "runtly-app" do
   desc "Manage Node, Bun, Deno and package managers, and audit their security posture"
   homepage "https://runtly.flatium.com"
 
-  depends_on macos: ">= :catalina"
+  # No `depends_on macos:` here. Homebrew deprecated the string comparison form
+  # and disabled the symbol form in the same breath — "there is no replacement"
+  # — so a cask can no longer state a minimum. The app declares its own:
+  # `minimumSystemVersion` in tauri.conf.json, which macOS enforces at launch.
 
   livecheck do
     url "https://dl.runtly.flatium.com/latest.json"
